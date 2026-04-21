@@ -1,59 +1,81 @@
-# AngularApp
+# 🎓 Exam Coder AI — Decode Your Lecturer's Mind
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.21.
+> **Stop reading everything. Start predicting what comes out.**
 
-## Development server
+Exam Coder AI is a mobile-first web application that uses the **Google Gemini 1.5/2.5 Flash** AI model's 1 million token context window to analyze your lecturer's past question patterns and generate high-probability exam predictions — complete with model answers.
 
-To start a local development server, run:
+Built for Nigerian university students. Vibe-coded with Antigravity AI.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ✨ What It Does
 
-## Code scaffolding
+| Step | Action |
+|------|--------|
+| 📚 **Feed "The Library"** | Paste your raw lecture notes (up to 500,000 words) |
+| 🧠 **Feed "The Style"** | Paste 5–10 past exam questions to teach the AI your lecturer's style |
+| ⚡ **Click "Decode Lecturer"** | Gemini AI analyzes the DNA of your lecturer's questions |
+| 📋 **Get Your Results** | Receive 20 style-matched predicted questions with detailed model answers |
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🚀 Live Demo
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🔗 **[https://exam-coder-ai-app.vercel.app](https://exam-coder-ai-app.vercel.app)**
 
-```bash
-ng generate --help
-```
+> **Note:** You will need a free **Google Gemini API key** to use the app.
+> Get yours here → [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+> Paste it into the app when prompted. Your key is never stored or sent anywhere except directly to Google's API.
 
-## Building
+---
 
-To build the project run:
+## 🛠️ Tech Stack
 
-```bash
-ng build
-```
+| Layer | Technology |
+|-------|-----------|
+| **Frontend Framework** | Angular (Standalone Components + Signals) |
+| **Styling** | Tailwind CSS (Dark Mode, Mobile-First) |
+| **AI Engine** | Google Gemini 1.5/2.5 Flash — 1M context window |
+| **AI SDK** | `@google/generative-ai` |
+| **Forms** | Angular Reactive Forms |
+| **Build Tool** | Angular CLI + Vite |
+| **Hosting** | Vercel |
+| **Development** | Antigravity AI (Vibe Coding) |
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+## 💻 Run Locally
 
 ```bash
-ng e2e
+# 1. Clone the repo
+git clone https://github.com/hollops/Exam-Coder-AI-app.git
+cd Exam-Coder-AI-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the dev server
+npm run start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Open your browser at **http://localhost:4200** and enter your Gemini API key to get started.
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔑 API Key — Privacy & Safety
+
+- Your API key is entered **at runtime in the app UI** — it is never hardcoded or stored in this repository
+- The key goes **directly from your browser to Google's API** — no middleman server
+- Each user provides their own key (free tier is sufficient for personal use)
+
+---
+
+## 👨‍💻 Built With Vibe Coding
+
+This entire application was scaffolded and refined using **natural language prompts** with the [Antigravity AI](https://antigravity.ai) IDE — a live demonstration of AI-assisted software development for the **GDG Campus** community.
+
+---
+
+## 📄 License
+
+MIT — free to use, modify, and share.
